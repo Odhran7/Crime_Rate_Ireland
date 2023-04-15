@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_912fd092de1796cb08f1560e1de6b7ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_912fd092de1796cb08f1560e1de6b7ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_912fd092de1796cb08f1560e1de6b7ec = L.map(
+                "map_912fd092de1796cb08f1560e1de6b7ec",
+                {
+                    center: [53.349805, -6.26031],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f7a12802cfda1ec658be4eed1cd6751 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+            var circle_marker_157d11f763ea66a4b68819d058ee90b7 = L.circleMarker(
+                [54.39428, -7.0366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_4ac57464a6cd46ab11664c985619914b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f26ac0e5603c5415793e310816a558bf = $(`<div id="html_f26ac0e5603c5415793e310816a558bf" style="width: 100.0%; height: 100.0%;">Cavan/Monaghan Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1584</div>`)[0];
+                popup_4ac57464a6cd46ab11664c985619914b.setContent(html_f26ac0e5603c5415793e310816a558bf);
+            
+        
+
+        circle_marker_157d11f763ea66a4b68819d058ee90b7.bindPopup(popup_4ac57464a6cd46ab11664c985619914b)
+        ;
+
+        
+    
+    
+            var circle_marker_0bb09f42c073d382cddd32866c0c8103 = L.circleMarker(
+                [52.83994, -9.04467],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_1a7c0530cbe87787c14765dfbc254527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e63c788f7681aa4e19dce2e7cd787b5 = $(`<div id="html_2e63c788f7681aa4e19dce2e7cd787b5" style="width: 100.0%; height: 100.0%;">Clare Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 890</div>`)[0];
+                popup_1a7c0530cbe87787c14765dfbc254527.setContent(html_2e63c788f7681aa4e19dce2e7cd787b5);
+            
+        
+
+        circle_marker_0bb09f42c073d382cddd32866c0c8103.bindPopup(popup_1a7c0530cbe87787c14765dfbc254527)
+        ;
+
+        
+    
+    
+            var circle_marker_a385e0399020c492365282af27f6fb6b = L.circleMarker(
+                [51.88649, -8.40499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_99211e8a17fc4e949826f5925bdb6c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a52b4555335e179e95665908d159b73 = $(`<div id="html_5a52b4555335e179e95665908d159b73" style="width: 100.0%; height: 100.0%;">Cork City Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 3922</div>`)[0];
+                popup_99211e8a17fc4e949826f5925bdb6c82.setContent(html_5a52b4555335e179e95665908d159b73);
+            
+        
+
+        circle_marker_a385e0399020c492365282af27f6fb6b.bindPopup(popup_99211e8a17fc4e949826f5925bdb6c82)
+        ;
+
+        
+    
+    
+            var circle_marker_df616f16e296ba5072663079eb449ba6 = L.circleMarker(
+                [43.0677, -87.92958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_83ce8cee9b64e1d46a2390e8103d5933 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d47a3158b1946a4dab8417862550d44 = $(`<div id="html_4d47a3158b1946a4dab8417862550d44" style="width: 100.0%; height: 100.0%;">Cork North Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1264</div>`)[0];
+                popup_83ce8cee9b64e1d46a2390e8103d5933.setContent(html_4d47a3158b1946a4dab8417862550d44);
+            
+        
+
+        circle_marker_df616f16e296ba5072663079eb449ba6.bindPopup(popup_83ce8cee9b64e1d46a2390e8103d5933)
+        ;
+
+        
+    
+    
+            var circle_marker_8cccf2bb9c915078679128f68bcbc8e9 = L.circleMarker(
+                [38.89037, -77.03196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_d4329fba6e060a44f2f6fcaa2cbaad6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ae3b15c3440204fdf1ae9dc0863c26c = $(`<div id="html_0ae3b15c3440204fdf1ae9dc0863c26c" style="width: 100.0%; height: 100.0%;">Cork West Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 731</div>`)[0];
+                popup_d4329fba6e060a44f2f6fcaa2cbaad6f.setContent(html_0ae3b15c3440204fdf1ae9dc0863c26c);
+            
+        
+
+        circle_marker_8cccf2bb9c915078679128f68bcbc8e9.bindPopup(popup_d4329fba6e060a44f2f6fcaa2cbaad6f)
+        ;
+
+        
+    
+    
+            var circle_marker_a42dac2287213dd7d63e1c58826b22c7 = L.circleMarker(
+                [53.3627, -6.2501],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_0207c384228a67adc084bf3da9a921dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b4171581d452f945f9928d9c9ad47dd = $(`<div id="html_3b4171581d452f945f9928d9c9ad47dd" style="width: 100.0%; height: 100.0%;">D.M.R. Eastern Garda Division<br>Largest Crime Category: Damage to Property and to the Environment<br>Predicted Crimes: 1262</div>`)[0];
+                popup_0207c384228a67adc084bf3da9a921dd.setContent(html_3b4171581d452f945f9928d9c9ad47dd);
+            
+        
+
+        circle_marker_a42dac2287213dd7d63e1c58826b22c7.bindPopup(popup_0207c384228a67adc084bf3da9a921dd)
+        ;
+
+        
+    
+    
+            var circle_marker_48d3a530fbce6a446c4bdcaed04fc96f = L.circleMarker(
+                [53.3603, -6.2614],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_5ff5c3a405df6fecbbcd2ce72f26074d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ada44784fa12904884676f50d58d01c = $(`<div id="html_1ada44784fa12904884676f50d58d01c" style="width: 100.0%; height: 100.0%;">D.M.R. North Central Garda Division<br>Largest Crime Category: Robbery and Extortion<br>Predicted Crimes: 6487</div>`)[0];
+                popup_5ff5c3a405df6fecbbcd2ce72f26074d.setContent(html_1ada44784fa12904884676f50d58d01c);
+            
+        
+
+        circle_marker_48d3a530fbce6a446c4bdcaed04fc96f.bindPopup(popup_5ff5c3a405df6fecbbcd2ce72f26074d)
+        ;
+
+        
+    
+    
+            var circle_marker_e0e9898c4d21700c6dd9ba266735a15b = L.circleMarker(
+                [53.386, -6.2652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_54dfb5552a140acc7c2fdbcae02adc12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81d685c0841d2df04b5fa061339d9750 = $(`<div id="html_81d685c0841d2df04b5fa061339d9750" style="width: 100.0%; height: 100.0%;">D.M.R. Northern Garda Division<br>Largest Crime Category: Damage to Property and to the Environment<br>Predicted Crimes: 3226</div>`)[0];
+                popup_54dfb5552a140acc7c2fdbcae02adc12.setContent(html_81d685c0841d2df04b5fa061339d9750);
+            
+        
+
+        circle_marker_e0e9898c4d21700c6dd9ba266735a15b.bindPopup(popup_54dfb5552a140acc7c2fdbcae02adc12)
+        ;
+
+        
+    
+    
+            var circle_marker_ba926259e3eb1108260c96097e222f08 = L.circleMarker(
+                [53.3382, -6.2674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_f0f0216b451aca437b6fb362f0e8849a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fc629bc32a966ce3c1c4c7bf4ba63c2 = $(`<div id="html_3fc629bc32a966ce3c1c4c7bf4ba63c2" style="width: 100.0%; height: 100.0%;">D.M.R. South Central Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 4873</div>`)[0];
+                popup_f0f0216b451aca437b6fb362f0e8849a.setContent(html_3fc629bc32a966ce3c1c4c7bf4ba63c2);
+            
+        
+
+        circle_marker_ba926259e3eb1108260c96097e222f08.bindPopup(popup_f0f0216b451aca437b6fb362f0e8849a)
+        ;
+
+        
+    
+    
+            var circle_marker_a95d38fe0a6ed81e1c2cfc9fd637bc95 = L.circleMarker(
+                [53.3311, -6.2696],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_c91c8c5e1d2e0e111d84b32675be662d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_022e0f5ef6cf9571586710c3745c0746 = $(`<div id="html_022e0f5ef6cf9571586710c3745c0746" style="width: 100.0%; height: 100.0%;">D.M.R. Southern Garda Division<br>Largest Crime Category: Damage to Property and to the Environment<br>Predicted Crimes: 2580</div>`)[0];
+                popup_c91c8c5e1d2e0e111d84b32675be662d.setContent(html_022e0f5ef6cf9571586710c3745c0746);
+            
+        
+
+        circle_marker_a95d38fe0a6ed81e1c2cfc9fd637bc95.bindPopup(popup_c91c8c5e1d2e0e111d84b32675be662d)
+        ;
+
+        
+    
+    
+            var circle_marker_435f5404fc473d852291ebde568fc84f = L.circleMarker(
+                [53.3466, -6.2971],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_468bf6067730804db555471d59900b46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10b97ba267eb0b5b8216faa956650e2c = $(`<div id="html_10b97ba267eb0b5b8216faa956650e2c" style="width: 100.0%; height: 100.0%;">D.M.R. Western Garda Division<br>Largest Crime Category: Endangerment<br>Predicted Crimes: 3454</div>`)[0];
+                popup_468bf6067730804db555471d59900b46.setContent(html_10b97ba267eb0b5b8216faa956650e2c);
+            
+        
+
+        circle_marker_435f5404fc473d852291ebde568fc84f.bindPopup(popup_468bf6067730804db555471d59900b46)
+        ;
+
+        
+    
+    
+            var circle_marker_8cd8b7d1394b35f7b80379067f14cf6b = L.circleMarker(
+                [54.65433, -8.11063],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_8e79f42a701e9d14f1f1ba121edfb5e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cd3fed9abf3c8c2d3f24283488a3184 = $(`<div id="html_8cd3fed9abf3c8c2d3f24283488a3184" style="width: 100.0%; height: 100.0%;">Donegal Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1773</div>`)[0];
+                popup_8e79f42a701e9d14f1f1ba121edfb5e0.setContent(html_8cd3fed9abf3c8c2d3f24283488a3184);
+            
+        
+
+        circle_marker_8cd8b7d1394b35f7b80379067f14cf6b.bindPopup(popup_8e79f42a701e9d14f1f1ba121edfb5e0)
+        ;
+
+        
+    
+    
+            var circle_marker_8c94cbc238026bc1f5085db29cba0210 = L.circleMarker(
+                [53.27404, -9.04807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_2264f2b141c897a0aff452eb13ff287f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea54c9c52322447ed268642e167e9769 = $(`<div id="html_ea54c9c52322447ed268642e167e9769" style="width: 100.0%; height: 100.0%;">Galway Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 2414</div>`)[0];
+                popup_2264f2b141c897a0aff452eb13ff287f.setContent(html_ea54c9c52322447ed268642e167e9769);
+            
+        
+
+        circle_marker_8c94cbc238026bc1f5085db29cba0210.bindPopup(popup_2264f2b141c897a0aff452eb13ff287f)
+        ;
+
+        
+    
+    
+            var circle_marker_94937c8ff415ecc5b7bd3188786e25ac = L.circleMarker(
+                [52.11902, -9.72155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_6232ae6648744f68b465578b50505d24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d4320a7c00c1d556df1d79425087e0f = $(`<div id="html_1d4320a7c00c1d556df1d79425087e0f" style="width: 100.0%; height: 100.0%;">Kerry Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1894</div>`)[0];
+                popup_6232ae6648744f68b465578b50505d24.setContent(html_1d4320a7c00c1d556df1d79425087e0f);
+            
+        
+
+        circle_marker_94937c8ff415ecc5b7bd3188786e25ac.bindPopup(popup_6232ae6648744f68b465578b50505d24)
+        ;
+
+        
+    
+    
+            var circle_marker_d46b511ca780f97569dfec0c0a0f818e = L.circleMarker(
+                [53.15666, -6.90989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_7835458a105cb968690068dbab045cad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_513c6656784f226eeff4fee5b8850b7a = $(`<div id="html_513c6656784f226eeff4fee5b8850b7a" style="width: 100.0%; height: 100.0%;">Kildare Garda Division<br>Largest Crime Category: Assault<br>Predicted Crimes: 1372</div>`)[0];
+                popup_7835458a105cb968690068dbab045cad.setContent(html_513c6656784f226eeff4fee5b8850b7a);
+            
+        
+
+        circle_marker_d46b511ca780f97569dfec0c0a0f818e.bindPopup(popup_7835458a105cb968690068dbab045cad)
+        ;
+
+        
+    
+    
+            var circle_marker_94fb9415e91bc4b41017378c86612f51 = L.circleMarker(
+                [52.65139, -7.25145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_34d997adecb312dba81aa5d311e32cd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99335b62f5927b3b67076996dc2ca680 = $(`<div id="html_99335b62f5927b3b67076996dc2ca680" style="width: 100.0%; height: 100.0%;">Kilkenny/Carlow Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1552</div>`)[0];
+                popup_34d997adecb312dba81aa5d311e32cd8.setContent(html_99335b62f5927b3b67076996dc2ca680);
+            
+        
+
+        circle_marker_94fb9415e91bc4b41017378c86612f51.bindPopup(popup_34d997adecb312dba81aa5d311e32cd8)
+        ;
+
+        
+    
+    
+            var circle_marker_c724577a00320af83496edb06134332f = L.circleMarker(
+                [53.20867, -7.59763],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_56bd903e0b41e6ae0167248c23587bdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc9a10e1c243f36885b0d4b701eea4b4 = $(`<div id="html_bc9a10e1c243f36885b0d4b701eea4b4" style="width: 100.0%; height: 100.0%;">Laois/Offaly Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1287</div>`)[0];
+                popup_56bd903e0b41e6ae0167248c23587bdf.setContent(html_bc9a10e1c243f36885b0d4b701eea4b4);
+            
+        
+
+        circle_marker_c724577a00320af83496edb06134332f.bindPopup(popup_56bd903e0b41e6ae0167248c23587bdf)
+        ;
+
+        
+    
+    
+            var circle_marker_8a2173a825abf3aa3a2d69d4185200b6 = L.circleMarker(
+                [52.66098, -8.63261],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_e6300b2ed2a9709ca9687853dad0b91e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17b45eecc4ee7096445aa7f8ab42af53 = $(`<div id="html_17b45eecc4ee7096445aa7f8ab42af53" style="width: 100.0%; height: 100.0%;">Limerick Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 2044</div>`)[0];
+                popup_e6300b2ed2a9709ca9687853dad0b91e.setContent(html_17b45eecc4ee7096445aa7f8ab42af53);
+            
+        
+
+        circle_marker_8a2173a825abf3aa3a2d69d4185200b6.bindPopup(popup_e6300b2ed2a9709ca9687853dad0b91e)
+        ;
+
+        
+    
+    
+            var circle_marker_5fe1ac51340b2215ad44df01c87f79a0 = L.circleMarker(
+                [53.91344, -6.40891],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_decdad530e0468e67b6ad10c78ed110d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc3526c1abc41c38da1f79874111d100 = $(`<div id="html_bc3526c1abc41c38da1f79874111d100" style="width: 100.0%; height: 100.0%;">Louth Garda Division<br>Largest Crime Category: Damage to Property and to the Environment<br>Predicted Crimes: 1333</div>`)[0];
+                popup_decdad530e0468e67b6ad10c78ed110d.setContent(html_bc3526c1abc41c38da1f79874111d100);
+            
+        
+
+        circle_marker_5fe1ac51340b2215ad44df01c87f79a0.bindPopup(popup_decdad530e0468e67b6ad10c78ed110d)
+        ;
+
+        
+    
+    
+            var circle_marker_2e7a81ad75d5ec068f2a15db415a1851 = L.circleMarker(
+                [53.92538, -9.39141],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_6c1d03244d65e61b8fca03bea5abbc34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0631f49f5cab9efe1e2964977d293f94 = $(`<div id="html_0631f49f5cab9efe1e2964977d293f94" style="width: 100.0%; height: 100.0%;">Mayo Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 854</div>`)[0];
+                popup_6c1d03244d65e61b8fca03bea5abbc34.setContent(html_0631f49f5cab9efe1e2964977d293f94);
+            
+        
+
+        circle_marker_2e7a81ad75d5ec068f2a15db415a1851.bindPopup(popup_6c1d03244d65e61b8fca03bea5abbc34)
+        ;
+
+        
+    
+    
+            var circle_marker_dd5a9234b3247dbf020c98b59228d01a = L.circleMarker(
+                [53.5112, -6.39746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_78e3771e489a7254bada02b79b31bceb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5c6f0dc8a5a825bde73ea2be3f5e2f = $(`<div id="html_6f5c6f0dc8a5a825bde73ea2be3f5e2f" style="width: 100.0%; height: 100.0%;">Meath Garda Division<br>Largest Crime Category: Assault<br>Predicted Crimes: 1043</div>`)[0];
+                popup_78e3771e489a7254bada02b79b31bceb.setContent(html_6f5c6f0dc8a5a825bde73ea2be3f5e2f);
+            
+        
+
+        circle_marker_dd5a9234b3247dbf020c98b59228d01a.bindPopup(popup_78e3771e489a7254bada02b79b31bceb)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab3ebeda99e5450d4e49ac3c9b3e301 = L.circleMarker(
+                [53.75789, -8.46013],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_4ae941b2804606e8cfad40f0b5c0311f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78deb1d6c198a42125e0c579c1d123d4 = $(`<div id="html_78deb1d6c198a42125e0c579c1d123d4" style="width: 100.0%; height: 100.0%;">Roscommon/Longford Garda Division<br>Largest Crime Category: Assault<br>Predicted Crimes: 761</div>`)[0];
+                popup_4ae941b2804606e8cfad40f0b5c0311f.setContent(html_78deb1d6c198a42125e0c579c1d123d4);
+            
+        
+
+        circle_marker_5ab3ebeda99e5450d4e49ac3c9b3e301.bindPopup(popup_4ae941b2804606e8cfad40f0b5c0311f)
+        ;
+
+        
+    
+    
+            var circle_marker_c231b61c98af7ef665853e501aa82e1e = L.circleMarker(
+                [54.04669, -8.68336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_0a5b79b8352e3360b771ea2bd7eb40ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aac7e3f8a7d21f780a3d71f52f559259 = $(`<div id="html_aac7e3f8a7d21f780a3d71f52f559259" style="width: 100.0%; height: 100.0%;">Sligo/Leitrim Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 770</div>`)[0];
+                popup_0a5b79b8352e3360b771ea2bd7eb40ed.setContent(html_aac7e3f8a7d21f780a3d71f52f559259);
+            
+        
+
+        circle_marker_c231b61c98af7ef665853e501aa82e1e.bindPopup(popup_0a5b79b8352e3360b771ea2bd7eb40ed)
+        ;
+
+        
+    
+    
+            var circle_marker_145b6a3fa3229dc52173a3155e805fdc = L.circleMarker(
+                [52.82155, -8.22222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_715b19351b2c7028a92759a756c69789 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d725bc86000d03bf263843f6398fe13a = $(`<div id="html_d725bc86000d03bf263843f6398fe13a" style="width: 100.0%; height: 100.0%;">Tipperary Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1603</div>`)[0];
+                popup_715b19351b2c7028a92759a756c69789.setContent(html_d725bc86000d03bf263843f6398fe13a);
+            
+        
+
+        circle_marker_145b6a3fa3229dc52173a3155e805fdc.bindPopup(popup_715b19351b2c7028a92759a756c69789)
+        ;
+
+        
+    
+    
+            var circle_marker_4de5f8d32240a0439dda6f6b0a1e49f0 = L.circleMarker(
+                [52.26325, -7.11652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_37079fe8c5c75c24e6822702121216ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8179099abef5fb265538335e7b54b2d2 = $(`<div id="html_8179099abef5fb265538335e7b54b2d2" style="width: 100.0%; height: 100.0%;">Waterford Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 1607</div>`)[0];
+                popup_37079fe8c5c75c24e6822702121216ab.setContent(html_8179099abef5fb265538335e7b54b2d2);
+            
+        
+
+        circle_marker_4de5f8d32240a0439dda6f6b0a1e49f0.bindPopup(popup_37079fe8c5c75c24e6822702121216ab)
+        ;
+
+        
+    
+    
+            var circle_marker_c9ac9cca29dc53f60dfbfe6b201461eb = L.circleMarker(
+                [53.52897, -7.4426],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_627c6894b578ab60f774167b656b9e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bb8a30170e164485ea79aa6fcc154aa = $(`<div id="html_4bb8a30170e164485ea79aa6fcc154aa" style="width: 100.0%; height: 100.0%;">Westmeath Garda Division<br>Largest Crime Category: Sexual Offences<br>Predicted Crimes: 838</div>`)[0];
+                popup_627c6894b578ab60f774167b656b9e5c.setContent(html_4bb8a30170e164485ea79aa6fcc154aa);
+            
+        
+
+        circle_marker_c9ac9cca29dc53f60dfbfe6b201461eb.bindPopup(popup_627c6894b578ab60f774167b656b9e5c)
+        ;
+
+        
+    
+    
+            var circle_marker_818be1c66c24dc20b600b345f5754e2a = L.circleMarker(
+                [52.26998, -6.38465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_3cf6b38766d30ee8ac7c3dbb0a15acfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f307ff908b24f05b278038d4fd1279b = $(`<div id="html_1f307ff908b24f05b278038d4fd1279b" style="width: 100.0%; height: 100.0%;">Wexford Garda Division<br>Largest Crime Category: Assault<br>Predicted Crimes: 1058</div>`)[0];
+                popup_3cf6b38766d30ee8ac7c3dbb0a15acfa.setContent(html_1f307ff908b24f05b278038d4fd1279b);
+            
+        
+
+        circle_marker_818be1c66c24dc20b600b345f5754e2a.bindPopup(popup_3cf6b38766d30ee8ac7c3dbb0a15acfa)
+        ;
+
+        
+    
+    
+            var circle_marker_e46f7b54c228b69418881cbddd8c40e8 = L.circleMarker(
+                [52.98067, -6.04362],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_912fd092de1796cb08f1560e1de6b7ec);
+        
+    
+        var popup_a1270fda397f0b4bc150206720575702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09c1917fe2676b5b4c978dd4712fcfad = $(`<div id="html_09c1917fe2676b5b4c978dd4712fcfad" style="width: 100.0%; height: 100.0%;">Wicklow Garda Division<br>Largest Crime Category: Damage to Property and to the Environment<br>Predicted Crimes: 777</div>`)[0];
+                popup_a1270fda397f0b4bc150206720575702.setContent(html_09c1917fe2676b5b4c978dd4712fcfad);
+            
+        
+
+        circle_marker_e46f7b54c228b69418881cbddd8c40e8.bindPopup(popup_a1270fda397f0b4bc150206720575702)
+        ;
+
+        
+    
+</script>
+</html>
